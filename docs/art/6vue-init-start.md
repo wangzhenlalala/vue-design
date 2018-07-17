@@ -13,7 +13,7 @@ var vm = new Vue({
 })
 ```
 
-我们以这个例子为线索开始了对 `Vue` 代码的讲解，我们知道了在实例化 `Vue` 实例的时候，`Vue.prototype._init` 方法被第一个执行，这个方法定义在 `src/core/instance/init.js` 文件中，在分析 `_init` 方法的时候我们遇到了下面的代码：
+我们以这个例子为线索开始了对 `Vue` 代码的讲解，我们知道了在[ 创建 `Vue` 实例的时候 | 实例化Vue类的时候]`Vue.prototype._init` 方法被第一个执行，这个方法定义在 `src/core/instance/init.js` 文件中，在分析 `_init` 方法的时候我们遇到了下面的代码：
 
 ```js
 vm.$options = mergeOptions(
